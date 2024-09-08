@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 20px;
+  padding: 0;
+  /* background-color:  linear-gradient(180deg, #f0f4ff, #ffffff); */
+  background-color: #F5F5F5;
+}
+h1 {
+  text-align: center;
+  color: #0078a8 ;
+  margin-bottom: 20px;
+}
+form {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 3%;
+  /* background-color: rgba(173, 216, 230, 0.6); */
+  background: linear-gradient(180deg, #f7faff, #e3f0ff);
+  border-radius: 8px;
+  /* box-shadow: 0 0px 60px rgba(255, 9, 9, 0.5); */
+  box-shadow: 0px 0px 15px 0px rgba(0, 168, 232, 0.5);
+  padding: 15px;
+}
+fieldset {
+  border: 2px solid #3498bd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: aliceblue;
+}
+form#resumeform{
+  border: 1px solid grey;
+}
+legend {
+  font-weight: 900;
+  text-decoration: underline;
+  text-align: center;
+  color: #004080;
+}
+label {
+  display: block;
+  margin-top: 2px;
+  color: #004080 ;
+}
+input,
+textarea {
+  width: calc(100%);
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #B3D9FF;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #E6F2FF  ;
+  color: #333333;
+}
+textarea:hover {
+  border-color: #0078a8;
+  background-color: #CCE5FF;
+  box-shadow: 0px 4px 8px rgba(0, 120, 168, 0.2);
+}
+#user:hover{
+  background-color: #99CCFF;
+}
+#email:hover{
+  background-color: #CCE5FF;
+}
+#phone:hover{
+  background-color: #CCE5FF;
+}
+#name:hover{
+  background-color: #CCE5FF;
+}
+#profilePicture:hover{
+  background-color: #CCE5FF;
+}
+
+button {
+  display: grid;
+  width: 70%;
+  margin-left: 15%;
+  padding: 10px 20px;
+  background: #0099CC ;
+  border-radius: 4px;
+  color: white;
+  border-radius: 40px;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+button:hover {
+  background-color: #007A99 ;
+  transform: scale(1.05);
+  border-color: #0078a8;
+  box-shadow: 0px 4px 12px rgba(0, 168, 232, 0.6);
+}
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0px 3px 8px rgba(0, 168, 232, 0.4);
+}
+
+.main-heading {
+  margin-top: 40px;
+  color: #003366;
+  font-size: 45px;
+}
+.profilePicture{
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #3498bd;
+  box-shadow: 0 4px 8px rgba(11, 7, 211, 0.5) ;
+  border-radius: 500%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+#profilePictureid{
+  margin-top: 10px;
+}
+/** CSS FOR RESUME OUTPUT  */
+
+#resumeOutput {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 15px;
+  padding: 20px;
+  border: 2px solid #3498bd;
+  border-radius: 8px;
+  background-color: aliceblue;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+}
+
+#resumeOutput h2 {
+  color: #2c3e50;
+}
+
+.editable {
+  margin-top: 10px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#edit-name {
+  margin-top: 5px;
+}
+#edit-email {
+  margin-top: 5px;
+}
+#edit-phone {
+  margin-top: 5px;
+}
+#resumeid {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resume builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="main-heading">"Simple & Editable Resume Builder"</h1>
+    <hr />
+    <!--* MAIN RESUME FORM -->
+    <form id="resumeform">
+      <fieldset>
+        <legend>PERSONAL INFORMATION</legend>
+
+        <label for="user">Your Resume Link:</label>
+        <input type="text" id="user" name="user" required /> <br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Cell no:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <!--*Profile picture part -->
+        <label for="profilePicture">PROFILE PICTURE</label>
+        <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+        
+
+
+      </fieldset>
+
+      <!--* EDUCATION -->
+      <fieldset>
+        <legend>EDUCATION</legend>
+        <label for="education">Education:</label>
+        <textarea name="education" id="education" rows="4" required></textarea>
+        <br />
+      </fieldset>
+
+      <!--* EXPERIENCE -->
+      <fieldset>
+        <legend>EXPERIENCE</legend>
+        <label for="experience">Experience:</label>
+        <textarea
+          name="experience"
+          id="experience"
+          rows="4"
+          required
+        ></textarea>
+        <br />
+      </fieldset>
+
+      <!--* SKILLS -->
+      <fieldset>
+        <legend>SKILLS</legend>
+        <label for="skills">Skills:</label>
+        <textarea name="skills" id="skills" rows="4" required></textarea>
+        <br />
+      </fieldset>
+
+      <!--* SUBMIT BUTTON  -->
+      <button type="submit">Generate resume below</button>
+    </form>
+
+    <!--* RESUME OUTPUT DIV  -->
+    <div id="resumeOutput"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
